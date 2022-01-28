@@ -1,0 +1,15 @@
+(
+    "
+    (?=SELECT|DELETE|ALTER|ANALYSE|AUDIT|COMMENT|CREATE|DROP|FLASHBACK|GRANT|NOAUDIT|PURGE|RENAME|REVOKE|TRUNCATE)
+    (?:\\.|[^\\"])*
+    "
+    (?:
+        \s*[+.]\s*
+        (?:
+            "(?:\\.|[^\\"])*"
+            |
+            [^,;+]+
+        )
+    )+
+)
+
